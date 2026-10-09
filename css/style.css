@@ -1,0 +1,854 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --red: #ed1c24;
+    --green: #28a745;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: Inter;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assests/Inter/Inter-VariableFont_opsz\,wght.ttf');}
+   
+@font-face {
+    font-family: Futurak;
+    src: url('../assests/futurak.TTF');
+}
+
+@font-face {
+    font-family: Butler;
+    src:url('../assests/butler/Butler\ FREE/#000000');
+}
+
+    
+    /* navbar started */
+.navbar-root{
+    background-color: var(--black);
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+
+.nav-logo{
+    width: 35%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo img{
+    width: 165px;
+}
+.nav-items{
+    background-color: var(--black);
+    width: 65%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    gap: 25px;
+}
+.nav-items a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.order-btn{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.franchise-btn{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.image-root img{
+    width: 100%;
+}
+/* navbar ended */
+
+/* welcome section started */
+.welcome-root{
+    background-color: transparent;
+    width: 100%;
+    height: 550px;
+}
+.top-items{
+    background-color: transparent;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+span{font-family: Futurak;}
+
+h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+}
+
+.bottom-items{
+    background-color: transparent;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 5px 40px;
+}
+
+.left-img{
+    background-color: var(--white);
+    width: 250px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.left-img img{
+    /* padding: 0 19px; */
+    /* background-color: red; */
+    margin-top: 65px;
+    width: 200px;
+    height: 150px;
+
+}
+.left-img button{
+    width: 150px;
+    /* height: 100px; */
+    border-radius: 50px;
+    padding:10px 20px;
+    background-color: transparent;
+    margin-top: 50px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#last-img{
+    padding-top: 23px;
+    background-color: var(--white);
+    width: 250px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    flex-direction: column;
+}
+#last-img img{margin-top: 50px;}
+
+#last-img button{
+    margin-top: 30px;
+    width: 150px;
+    border-radius: 48px;
+    padding:10px 20px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+/* welcome section ended */
+
+/* location section started */
+
+.location-root{
+    background-color: var(--black);
+    width: 100%;
+    height: 580px;
+}
+
+.location-top-heading{
+    /* background-color: #28a745; */
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.location-top-heading span{
+    color: var(--white);
+    font-family: Futurak;
+    font-size: 52px;
+}
+
+.location-top-heading h1{
+    color: var(--white);
+    font-family: Butler;
+    font-size: 48px;
+}
+
+.location-top-heading p{
+    font-size: 16px;
+    color: var(--white);
+}
+
+.location-bottom-items{
+    /* background-color: pink; */
+    width: 100%;
+    height: 65%;
+    display: flex;
+
+}
+
+.location-left-img{
+    /* background-color: green; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location-left-img img{
+   margin-left: 50px;
+}
+
+.location-right-items{
+    /* background-color: navy; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.location-right-items h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+    margin-bottom: 8px;
+    display: block;
+}
+.location-right-items h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+#ph-nmbr{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.location-right-items button{
+    width: 174px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 0 15px;
+    margin-top: 40px;
+    background-color: transparent;
+}
+
+#btn i{
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: var(--red);
+    padding: 5px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#s-sign{
+    /* z-index: 1; */
+    font-size: 600px;
+    font-family: Futurak;
+    position: absolute;
+    left: 930px;
+    opacity: 0.1;
+}
+
+.location-bttm{
+    background-color: var(--black);
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.left-items{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.left-items h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.left-items h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.left-items button{
+    width: 174px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 0 15px;
+    margin-top: 40px;
+    background-color: transparent;
+}
+
+.right-img{
+    background-color: var(--black);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+}
+/* location section ended */
+
+
+
+
+
+/* SNP Express franchise section started */
+.Exp-franchise-root{
+    background-color: var(--black);
+    width: 100%;
+    height: 2300px;
+    padding-top: 20px;
+}
+
+.Exp-franchise-root h1{
+    color: var(--white);
+    font-family: Butler;
+    font-size: 48px;
+    line-height: 60px;
+}  
+
+.ten-location{
+    background-color: var(--black);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat( 3 , 1fr);
+    grid-template-rows: repeat( 3 , 1fr);
+}
+
+.ten-location div{
+    background-color: var(--black);
+    width: 400px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#sargodha h5{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#sargodha h2{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    /* margin-bottom: 20px; */
+}
+ #sargodha button{
+    width: 174px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 0 15px;
+    background-color: transparent;
+ }
+
+.burewala{ 
+    grid-column: 2 / 4;
+}
+/* SNP Express franchise section ended */
+
+
+
+
+/* village franchise section started */
+.village-franchise{
+    background-color: var(--black);
+    width: 100%;
+    height: 585px;
+    margin-top: 120px;
+}
+
+.title{
+    background-color: var(--black);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title span{
+    font-family: Futurak;
+    font-size: 52px;
+}
+
+.title h1{
+    font-family: 'butler';
+    font-size: 4.8rem;
+    font-style: normal;
+    line-height: 60px;
+}
+
+.VF-items{
+    width: 100%;
+    height: 435px;
+    display: flex;
+
+}
+
+.img-left {
+    background-color: var(--black);
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+#img-vf{
+    height: 100%;
+}
+
+.items-right{
+    background-color: var(--black);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.items-right h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.items-right h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.items-right button{
+    width: 174px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 0 15px;
+    margin-top: 40px;
+    background-color: var(--green);
+    transition: 0.75s smooth;
+}
+
+.items-right button:hover{
+    background-color: transparent;
+}
+/* village franchise section ended */
+
+
+/* Franchise opening soon section started */
+.frnch-soon-root{
+    background-color: transparent;
+    width: 100%;
+    height: 1020px;
+}
+
+.title-fsr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 60px;
+    color: #FFFFFF;
+    background-color: transparent;
+    width: 100%;
+    height: 123px;
+}
+
+.title-fsr span{
+    font-family: Futurak;
+    font-size: 52px;
+}
+.title-fsr h1{
+    font-family: 'butler';
+    font-size: 4.8rem;
+    font-style: normal;
+    line-height: 60px;
+}
+small{
+    font-style: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #FFFFFF;
+    font-family: Inter;
+}
+
+.sect-cards-fsr{
+    background-color:  var(--black);
+    width: 100%;
+    height: 810px;
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    grid-template-rows: repeat( 3 , 1fr);
+    padding: 0 40px;
+} 
+
+.card-fsr{
+    background-color: var(--white);
+    width: 350px;
+    height: 230px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 32px;
+    color: var(--red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+#box-7{grid-column: 2/3;}
+
+.card-fsr img{
+    margin-bottom: 10px;
+}
+
+.card-fsr small{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+}
+
+.card-fsr h1{
+    font-weight: 500;
+    margin-right: 8px;
+    font-size: 34px;
+    color: var(--black);
+}
+
+.card-fsr p{
+    font-family: 'FuturaBlack BT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+
+.card-fsr h4{
+    font-family: 'FuturaBlack BT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.card-fsr span{
+    font-family: 'FuturaBlack BT';
+    font-size: 21px;
+    font-weight: 400;
+}
+/* Franchise opening soon section ended */
+
+/* footer started */
+.footer-root{
+    /* background-color: navy; */
+    width: 100%;
+    height: 585px;
+    display: flex;
+}
+.footer-one{
+    /* background-color: red; */
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding: 50px;
+}
+.footer-one p{
+    font-size: 15px;
+    color: var(--white);
+}
+.footer-one ul{
+    display: flex;
+    gap: 10px;
+}
+.footer-one ul a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+}
+#S-sign-footer{
+    font-size: 600px;
+    font-family: Futurak;
+    position: absolute;
+    top: 6180px;
+    margin: 0;
+    /* z-index: 2; */
+    opacity: 0.1;
+}
+.footer-two{
+    /* background-color: violet; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.footer-two h3{
+    margin-bottom: 15px !important;
+    font-family: 'Butler';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: start;
+    margin-right: 30px;
+}
+.footer-two ul{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-two ul li{
+    color: var(--white);
+    list-style: none;
+    font-size: 15px;
+    padding-bottom: 16px;
+}
+li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-three{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.footer-three h3{
+    font-size: 20px;
+    line-height: 10px;
+    margin-bottom: 20px;
+    margin-right: 140px;
+    font-family: 'Butler';
+}
+.footer-three li{
+    list-style: none;
+    display: flex;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.footer-three a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none;
+}
+.footer-four{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+.footer-four h3{
+    font-size: 20px;
+    line-height: 10px;
+    margin-bottom: 20px;
+    margin-right: 140px;
+    font-family: 'Butler';
+    margin-top: 50px;
+    margin-left: 250px;
+    width: 100%;
+}
+.footer-four ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+.footer-four a{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #ED1C24;
+    color: #fff;
+    border-radius: 50px;
+}
+.footer-four a i{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+#footer-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 5px;
+}
+/* footer ended */
